@@ -43,7 +43,7 @@ jobs:
       - name: Lint project
         run: env LEAN_ABORT_ON_PANIC=1 ~/.elan/bin/lake exe runLinter Carleson
 
-      - uses: Vierkantor/docgen-tester@main
+      - uses: leanprover-community/docgen-action@main
         with:
           blueprint: true
           homepage: docs
